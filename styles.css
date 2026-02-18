@@ -1,0 +1,340 @@
+/* === Global Styles === */
+body {
+  background-color: #222;
+  color: #eee;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem;
+  margin: 0;
+}
+
+h1, h2 {
+  color: #fff;
+}
+
+/* === Top Navigation === */
+.top-bar {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 2rem;
+}
+
+.tab-btn {
+  background-color: #444;
+  color: #ffffff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab-btn:hover {
+  background-color: #fff;
+  color: #222;
+}
+
+.active-tab {
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 0 6px #00000055;
+}
+
+.skills-list li:hover{
+  padding: 5px 7px;
+  color: white;
+  transition: 0.2s;
+}
+
+/* === Main Layout === */
+.main-grid {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+  background-color: #2b2b2b;
+  border: 5px solid #444;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 0 30px #00000044;
+}
+
+/* === Sidebar === */
+.sidebar {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.avatar {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #555;
+  margin-bottom: 1.5rem;
+  transition: 0.3s;
+}
+
+/* === Social Links === */
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-buttons a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.social-buttons a:hover {
+  background-color: #555;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* === Main Content Area === */
+.content {
+  flex-grow: 1;
+}
+
+.section {
+  background-color: #1c1c1c;
+  padding: 2rem;
+  border-radius: 8px;
+  color: #ddd;
+  margin: 15px;
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+.info-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;    
+                       
+}
+
+.left-info,
+.right-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  
+}
+
+.skills-list li {
+  background-color: #78a1cf;
+  padding: 6px 12px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-right: 6px;
+  font-size: 0.95rem;
+  transition: 0.2s;
+}
+
+.projects-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.project-card {
+  flex: 1 1 45%;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #00000066;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-bottom: 1px solid #333;
+}
+
+.project-description {
+  padding: 1rem;
+  color: #ddd;
+}
+
+.project-description h3 {
+  margin-top: 0;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px 6px 0 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(28, 28, 28, 0.75);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 6px 6px 0 0;
+  pointer-events: none; 
+}
+
+.overlay small {
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  font-weight: normal;
+  opacity: 0.9;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px 6px 0 0;
+}
+
+
+.extras-grid {
+  max-width: 1000px;
+  margin: auto;
+  background-color: #2b2b2b;
+  border: 5px solid #444;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 0 30px #00000044;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.popuplang span {
+  display: flex;
+  padding: 5px;
+}
+
+
+.toggleswitch span {
+  display: flex;
+  padding: 5px;
+}
+
+.lang-btn {
+  gap: 2px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+
+}
+
+.lang-btn:hover {
+   color: #78a1cf;
+}
+
+
+.switch {
+  font-size: 15px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #333;
+  border: 1px solid #333;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.27em;
+  bottom: 0.25em;
+  background-color: #adb5bd;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #333;
+}
+
+input:checked + .slider:before {
+  transform: translateX(1.4em);
+  background-color: #333;
+}
